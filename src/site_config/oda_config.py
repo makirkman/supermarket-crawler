@@ -1,10 +1,6 @@
 ## Config for Oda crawler specifically ##
 
-# urls
-BASE_URL = "https://oda.com/"
-STARTING_SECTION = "no/"
-
 # filepaths
-HTML_FOLDER = "read_html/oda/"
-URLS_TO_STRIP = ["https://oda.com/", "https://oda.com/no/"]
-OUTPUT_FILE = "oda.tsv"
+oda_html_folder = "read_html/oda/"
+oda_urls_to_strip = ["https://oda.com/no/", "https://oda.com/"]
+oda_output_file = "oda.tsv"
