@@ -4,7 +4,7 @@ A web crawler which walks through product websites and gathers basic metadata ab
 
 ## Use
 Set Config files as you prefer (which site to crawl, and whether to use locally stored html if the program has been run on it before)
-Run `python3 supermarket_crawler` from a parent folder, or `python3 __main__.py` from the project root.
+Run `python3 supermarket_crawler` from a parent folder.
 
 Product details are found in a tsv file in output_text/<WEBSITE>.tsc
 
