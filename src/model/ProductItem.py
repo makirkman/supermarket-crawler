@@ -4,7 +4,7 @@ class ProductItem:
 	Represents a single Product and metadata found while crawling any site.
 	"""
 
-	def __init__(self, name, details, price, url):
+	def __init__(self, name: str, details: str, price: str, url: str):
 		self.name = name
 		"""The name of the product."""
 		self.details = details

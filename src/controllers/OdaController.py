@@ -96,8 +96,6 @@ class OdaController(SiteController):
 		return next_links
 
 	def get_all_product_items_in_page(self, soup):
-		# items = soup.findAll('div', {'class': 'product-list-item'})
-		# special_items = soup.findAll('div', {'class': 'product-list-item'})
 		items = soup.select('div[class*=product-list-item]')
 
 		oda_items = []
@@ -129,4 +127,4 @@ class OdaController(SiteController):
 		if url:
 			url = self.base_url.strip('/') + url.get('href')
 
-		return ProductItem(name, price, details, url)
+		return ProductItem(name, details, price, url)
